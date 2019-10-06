@@ -11,11 +11,21 @@
 **/
 
 class mainClass {
+
+
+/* Gets the Alpha discriptor code */
 function get_discriptor($queryParam){
+
 $sql = "SELECT `alpha`.`code` FROM `alpha` where `discriptor` LIKE '$queryParam%';";
+
 // Object oriented query
 $result = $conn->query($sql);
-return $result["code"];
+
+// if the word is not in the database then 
+if ($result['code'] != $queryParam){ echo " There is no Alpha for : " + $queryParam;}else {
+
+return $result['code'];
+}
 $conn->close;
 }  // end function get_discriptor
 
