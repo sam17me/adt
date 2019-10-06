@@ -19,6 +19,6 @@ return $result["code"];
 $conn->close;
 }  // end function get_discriptor
 
-}  end class
+} // end class
 
 ?>
