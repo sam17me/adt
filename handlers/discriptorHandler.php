@@ -7,7 +7,7 @@ $dataIn = $_REQUEST['criterion'];
 // make database connection here.
 $conn = new mysqli("localhost", "merrell", "47$!Lver", "adt"); 
 
-if ($result = $conn->query("SELECT `alpha`.`code` FROM `alpha` where `discriptor` LIKE '$dataIn%';";")) {
+if ($result = $conn->query("SELECT `alpha`.`code` FROM `alpha` where `discriptor` LIKE '$dataIn%';")) {
     printf("Select returned %d rows.\n", $result->num_rows);
 
     /* free result set */
