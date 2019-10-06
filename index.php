@@ -28,7 +28,7 @@ src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'>
 $(function(){
 <!-- on search button click  -->
 $("#search_button").click(function(){
-  $.ajax({url: "../handlers/discriptorHandler.php", success: function(result){
+  $.ajax({url: "./handlers/discriptorHandler.php", success: function(result){
     $("#search_result").html(result);
   }});
 });
