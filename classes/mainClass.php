@@ -19,7 +19,7 @@ function get_discriptor($queryParam){
 $sql = "SELECT `alpha`.`code` FROM `alpha` where `discriptor` LIKE '$queryParam%';";
 
 // Object oriented query
-$result = $conn->query($sql);
+$result = $conn->mysqli_query($conn, $sql);
 
 // if the word is not in the database then 
 if ($result['code'] != $queryParam){ echo " There is no Alpha for : " + $queryParam;}else {
