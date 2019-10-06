@@ -1,3 +1,5 @@
+<?php
+
 /**
 * mainClass contains all the methods and parameter for use on the site.
 *
@@ -18,3 +20,5 @@ $conn->close;
 }  // end function get_discriptor
 
 }  end class
+
+?>
