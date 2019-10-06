@@ -1,0 +1,15 @@
+body{
+	background-color:lightblue;
+}
+
+#search_result{
+	position:absolute;
+	top:30%;
+	left:15%;
+	border:1px solid;
+	width: 200px;
+	height: 80px;
+	background-color:white;
+}
+
+
