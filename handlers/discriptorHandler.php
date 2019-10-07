@@ -9,8 +9,8 @@ $conn = new mysqli("localhost", "merrell", "47$!lver", "adt");
 
 if ($result = $conn->query("SELECT `alpha`.`code` FROM `alpha` where `discriptor` LIKE '$dataIn%';")) {
     
-        while($row =   $conn-> fetch_assoc()){;
-	echo $row->['code'];}O
+        $row =   $result->fetch_assoc();
+	echo $row['code'];
 
 
     /* free result set */
