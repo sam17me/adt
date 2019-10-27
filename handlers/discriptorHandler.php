@@ -8,12 +8,11 @@ $dataIn = $_REQUEST['criterion'];
 $conn = new mysqli("localhost", "merrell", "47$!lver", "adt"); 
 
 /**** Test
-
+*/
 // create an instance of the mainClass
 $rubrics = new mainClass;
 
 //call the  get_discriptor function from mainClass
 $rubrics->get_discriptor($dataIn);
 
-****/
 ?>
