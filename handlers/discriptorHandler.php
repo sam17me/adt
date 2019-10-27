@@ -7,8 +7,7 @@ $dataIn = $_REQUEST['criterion'];
 // make database connection here.
 $conn = new mysqli("localhost", "merrell", "47$!lver", "adt"); 
 
-/**** Test
-*/
+
 // create an instance of the mainClass
 $rubrics = new mainClass;
 
